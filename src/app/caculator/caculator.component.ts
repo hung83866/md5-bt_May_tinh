@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./caculator.component.css']
 })
 export class CaculatorComponent implements OnInit {
-
+color= ''
   constructor() { }
 
   ngOnInit(): void {
@@ -52,4 +52,13 @@ export class CaculatorComponent implements OnInit {
     alert("kết quả = "+kq)
   }
 
+  yellow(){
+    this.color = 'yellow'
+  }
+  red(){
+    this.color = 'red'
+  }
+  blue(){
+    this.color = 'blue'
+  }
 }
